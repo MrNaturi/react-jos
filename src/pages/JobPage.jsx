@@ -131,7 +131,7 @@ const JobPage = ({deleteJob}) => {
 
 
 const jobLoader = async({params}) => {
-  const res = await fetch(`/api/jobs/${params.id}`);
+  const res = await fetch(`https://422ece93-64b3-498f-8c76-a91877e5b1df-00-15r6s36zbqq7z.worf.replit.dev/jobs/${params.id}`);
   const data = await res.json();
   return data;
 }
